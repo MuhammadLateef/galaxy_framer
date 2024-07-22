@@ -5,7 +5,8 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
+  plugins: [require("daisyui")],
+  theme: {  
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +15,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 }
